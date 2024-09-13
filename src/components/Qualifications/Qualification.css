@@ -1,0 +1,144 @@
+/* Section Styles */
+.qualification {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .section__title {
+    font-size: 3rem; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section__subtitle {
+    display: block;
+    font-size: 1.5rem; /* Increased subtitle font size */
+    color: #555;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  /* Tabs Styles */
+  .qualification__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem; /* Increased margin for spacing */
+  }
+  
+  .qualification__button {
+    font-size: 1.4rem; /* Increased font size for buttons */
+    font-weight: 600;
+    color: #666;
+    margin: 0 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem; /* Increased padding for larger button size */
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .qualification__button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .qualification__icon {
+    font-size: 2rem; /* Increased icon size */
+    margin-right: 1rem;
+  }
+  
+  .qualification__active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Sections Styles */
+  .qualification__sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .qualification__content {
+    display: none;
+  }
+  
+  .qualification__content-active {
+    display: block;
+  }
+  
+  /* Data Styles */
+  .qualification__data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 3rem 0; /* Increased margin for more spacing */
+    padding: 3rem; /* Increased padding for larger size */
+    background: #fff;
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    max-width: 1000px; /* Increased max-width */
+    width: 100%;
+  }
+  
+  .qualification__data div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qualification__title {
+    font-size: 1.8rem; /* Increased font size */
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .qualification__subtitle {
+    font-size: 1.3rem; /* Increased subtitle font size */
+    color: #777;
+    margin-bottom: 1rem; /* Increased margin */
+  }
+  
+  .qualification__calender {
+    font-size: 1.2rem; /* Increased calendar font size */
+    color: #555;
+  }
+  
+  /* Removed blue line */
+  .qualification__rounder {
+    display: none;
+  }
+  
+  .qualification__line {
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .qualification__sections {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem; /* Increased gap between items */
+    }
+  
+    .qualification__data {
+      max-width: 48%; /* Increased box size in larger screens */
+      margin: 3rem; /* Adjusted margin for spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .qualification__data {
+      max-width: 95%;
+      margin: 2rem 0;
+    }
+  }
+  
